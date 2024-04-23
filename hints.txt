@@ -1,0 +1,8 @@
+npm init -y
+npm install express,pg,bcrypt,nodemon
+create table register(
+    id serial primary key,
+    name varchar(100),
+    email varchar(100) not null unique,
+    password varchar(50)
+)//create table in pgadmin4
